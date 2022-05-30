@@ -8,7 +8,7 @@ body {
   background: linear-gradient(to right, red, yellow); /* Standard syntax */
 }
 
-h1 {
+.header {
   font: 600 3.5em "Raleway", sans-serif;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -23,4 +23,19 @@ h3 {
   text-align: center;
   text-transform: none;
   letter-spacing: 0.01em;
+}
+
+#turn {
+  display: none;
+  z-index: 100;
+  position: fixed;
+}
+
+@media (orientation: portrait) {
+  #turn {
+    display:block;
+  }
+  #gradient {
+    display: none;
+  }
 }
